@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
+    "@codewithshin/svelte-utterances": "^0.1.2",
     "@iconify/json": "^2.1.6",
     "@jsdevtools/rehype-toc": "^3.0.2",
     "@sveltejs/adapter-static": "^1.0.0-next.28",
@@ -57,7 +58,6 @@
     "cookie": "^0.4.1",
     "dayjs": "^1.10.7",
     "katex": "^0.15.2",
-    "svelte-particles": "^1.41.4",
-    "utterances-svelte-component": "^1.0.0"
+    "svelte-particles": "^1.41.4"
   }
 }

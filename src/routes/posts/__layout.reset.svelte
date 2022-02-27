@@ -19,9 +19,8 @@
 	}
 </script>
 <script>
-	// import { Utterances } from 'utterances-svelte-component';
 	import meta from '$lib/meta.js';
-	import { Utterances } from 'utterances-svelte-component';
+	import { Utterances } from '@codewithshin/svelte-utterances';
 	export let post;
 </script>
 
