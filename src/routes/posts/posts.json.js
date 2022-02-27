@@ -1,4 +1,4 @@
-import posts from '$lib/posts.js';
+import posts from '$lib/posts';
 
 export async function get() {
 	const body = posts.slice(0, 4);

@@ -3,7 +3,7 @@ import db from '$lib/posts/db.json';
 import dayjs from 'dayjs';
 import path from 'path';
 
-const imports = import.meta.globEager('./*.md');
+const imports = import.meta.globEager('./posts/*.md');
 const posts = [];
 export const md_components = [];
 
