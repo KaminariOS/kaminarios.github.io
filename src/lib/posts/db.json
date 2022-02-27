@@ -1,0 +1,34 @@
+{
+  "posts": {
+    "tesdt": {
+      "slug": "tesdt",
+      "mtime": "2022-02-27T07:43:31.890Z",
+      "birthtime": "2022-02-17T16:52:20.423Z"
+    },
+    "test": {
+      "slug": "test",
+      "mtime": "2022-02-27T07:43:31.960Z",
+      "birthtime": "2022-02-17T02:47:27.987Z"
+    },
+    "test3": {
+      "slug": "test3",
+      "mtime": "2022-02-27T07:43:32.080Z",
+      "birthtime": "2022-02-17T06:02:57.498Z"
+    },
+    "test2": {
+      "slug": "test2",
+      "mtime": "2022-02-27T07:43:32.030Z",
+      "birthtime": "2022-02-22T08:34:20.574Z"
+    },
+    "first-blog": {
+      "slug": "first-blog",
+      "mtime": "2022-02-26T12:38:54.571Z",
+      "birthtime": "2022-02-23T04:23:39.163Z"
+    },
+    "future": {
+      "slug": "future",
+      "mtime": "2022-02-26T12:35:49.561Z",
+      "birthtime": "2022-02-24T17:21:21.652Z"
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.post-content {
+
+  $headers: (h1, h2, h3, h4, h5, h6);
+  @each $header in $headers {
+    #{$header} {
+      text-align: left;
+      > a {
+        color: inherit;
+      }
+    }
+    #{$header}:hover > a {
+      text-decoration: underline;
+    }
+  }
+
+  nav.toc {
+    background-color: #eee;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //margin: 4px;
+    padding-right: 1em;
+    border-radius: 10px;
+  }
+
+  $toc_list: "ol.toc-level";
+
+  #{$toc_list} {
+    counter-reset: toc;
+    list-style: none;
+    padding-inline-start: 1em;
+
+    > li {
+      counter-increment: toc;
+
+      a {
+        &:before {
+          content: counters(toc, '.') ' ';
+          font: {
+            weight: bold;
+            family: cursive;
+          }
+        }
+      }
+    }
+  }
+
+  pre[class*="language-"] {
+    margin: 1em !important;
+    border-radius: 15px;
+    cursor: pointer;
+
+  }
+
+  @import '@fontsource/open-sans';
+  $block_border: 10px;
+
+  blockquote {
+    display: inline-block;
+    margin: 0 1em;
+    padding: 0 1em;
+    border-left: $block_border solid #78C0A8;
+    background: #EDEDED;
+    position: relative;
+    line-height: 1.6;
+    font-style: italic;
+    font-size: 1.4em;
+    font-family: "Open Sans", serif;
+    border-radius: 0 5px 5px 0;
+
+    &:before {
+      display: none;
+    }
+
+    &:not(:first-of-type) {
+      margin-top: .5em;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.4;
+    }
+
+    footer {
+      display: block;
+      color: #333333;
+      font-weight: bold;
+      margin-top: 1em;
+    }
+
+  }
+
+  p > img {
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    display: block;
+  }
+
+  ul > li {
+    &::marker {
+      content: "❂ ";
+      color: orange;
+    }
+
+    > ul > li {
+      &::marker {
+        content: "❆ ";
+      }
+
+      > ul > li {
+        &::marker {
+          content: "❉ ";
+        }
+      }
+    }
+
+    &:hover {
+      &::marker {
+        content: "✪ ";
+        color: blue;
+      }
+
+    }
+  }
+
+
+  table {
+    border-collapse: collapse;
+
+    td, th {
+      border: 1px solid #999;
+      padding: 0.5rem;
+      text-align: left;;
+    }
+  }
+
+
+}
+main .post-content {
+  margin: auto 10%;
+  padding-top: 3vh;
+}
+main .post-meta {
+  h1 {
+    text-align: center;
+  }
+  padding: 1em 1em 0 .5em;
+  margin-block-start: 0;
+}
