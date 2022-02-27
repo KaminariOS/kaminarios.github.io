@@ -8,7 +8,7 @@ import path from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const post_dir = 'src/lib/posts';
+const post_dir = 'src/routes/posts';
 
 
 

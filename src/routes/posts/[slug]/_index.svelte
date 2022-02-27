@@ -1,15 +1,35 @@
 <script context="module">
 	// Get posts info
-
 	const allPosts = import.meta.globEager(`../../../lib/posts/*.md`);
-
 	let posts = [];
 	// Get the posts' slugs
 	for (let relPath in allPosts) {
 		const post = allPosts[relPath];
 		const slug = relPath.split('/').slice(-1)[0].split('.')[0];
-		const p = { ...post, slug };
+		const p = {post, slug };
 		posts.push(p);
+	}
+	export async function load({ params, fetch}) {
+		const { slug } = params;
+		const url = `/posts/${slug}.json`;
+		// const res = await fetch(url);
+		// if (!res.ok){
+		// 	return {
+		// 		status: res.status,
+		// 		error: new Error(`Could not load ${url}`)
+		// 	};
+		// }
+		// Find the post with the slug
+		const filteredPost = posts.find((p) => {
+			return p.slug.toLowerCase() === slug.toLowerCase();
+		});
+		return {
+			props: {
+				// Tell page to load that post's module
+				component: filteredPost.post.default,
+				// post: await res.json(),
+		}
+		};
 	}
 </script>
 <script>
@@ -17,8 +37,7 @@
 	import {onMount} from 'svelte';
 	import findPre from '$lib/copy';
 	export let post;
-	let component = posts.filter(e => e.slug === post.slug)[0];
-
+	export let component;
 	onMount(findPre);
 </script>
 <svelte:head>
@@ -50,8 +69,7 @@
 </div>
 <hr>
 <div class='post-content'>
-	<svelte:component this={component.default}/>
-
+	<svelte:component this={component}/>
 </div>
 <style lang='scss'>
 	.tags {

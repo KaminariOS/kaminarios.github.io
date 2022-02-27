@@ -7,7 +7,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 
 export default {
-	extensions: ['.md', '.svx'],
+	extensions: ['.md'],
 	smartypants: {
 		quotes: true,
 		ellipses: true,

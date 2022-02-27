@@ -9,14 +9,19 @@ import Icons from 'unplugin-icons/vite'
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	extensions: ['.svelte', ...mdsvexConfig.extensions],
+	extensions: ['.svelte', '.md'],
 	preprocess: [
-		preprocess(),
+		preprocess({
+			// preserve: ['module']
+		}),
 		mdsvex(mdsvexConfig),
 	],
 
 	kit: {
 		adapter: adapter(),
+		prerender: {
+			onError: 'continue'
+		},
 		vite: {
 			plugins: [
 				Icons({

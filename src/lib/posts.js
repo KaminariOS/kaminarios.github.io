@@ -3,7 +3,7 @@ import db from '$lib/posts/db.json';
 import dayjs from 'dayjs';
 import path from 'path';
 
-const imports = import.meta.globEager('./posts/*.md');
+const imports = import.meta.globEager('../routes/posts/*.md');
 const posts = [];
 export const md_components = [];
 
@@ -17,7 +17,7 @@ for (const relativePath in imports) {
 			slug,
 			...post.metadata,
 			...post.default.render(),
-	    // default: post.default,
+	    default: post.default,
 			mtime: dayjs(db_post.mtime),
 			birthtime: dayjs(db_post.birthtime),
 			count: 0,

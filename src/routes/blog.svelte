@@ -43,7 +43,7 @@
 </div>
 <style lang='scss'>
 
-  @media only screen and (min-width: 391px){
+  @media only screen and (min-width: 501px){
     .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -62,8 +62,8 @@
 	}
 
   @media only screen
-  and (device-width: 390px)
-  and (device-height: 844px)
+  and (max-width: 420px)
+  //and (device-height: 844px)
    {
     .grid-container {
       display: grid;

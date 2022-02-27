@@ -22,7 +22,6 @@
 <script>
 	import Eyes from '$lib/widget/Eyes.svelte';
 	import Typewriter from 'svelte-typewriter';
-
 </script>
 
 

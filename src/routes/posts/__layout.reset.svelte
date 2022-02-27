@@ -7,10 +7,22 @@
 	import ToggleButton from '$lib/widget/EffectToggler.svelte';
 	import ThemeToggler from '$lib/widget/ThemeToggler.svelte';
 	import {enable_effects, menuMode} from '$lib/stores.js';
+	import PostContent from '$lib/PostContent.svelte';
+
+	export async function load({ url, fetch }) {
+	        const post = await fetch(`${url.pathname}.json`).then(res => res.json());
+					return {
+						props: {
+							post
+						}
+					}
+	}
 </script>
 <script>
 	// import { Utterances } from 'utterances-svelte-component';
 	import meta from '$lib/meta.js';
+	import { Utterances } from 'utterances-svelte-component';
+	export let post;
 </script>
 
 <svelte:head>
@@ -22,16 +34,17 @@
 </div>
 <Nav/>
 <main class='post-page'>
+<PostContent {post}>
 	<slot/>
-
+</PostContent>
 </main>
 
-<!--<Utterances-->
-<!--	repo="{meta.repo}"-->
-<!--	theme="gruvbox-dark"-->
-<!--	label="comments"-->
-<!--	issueTerm="pathname"-->
-<!--/>-->
+<Utterances
+	repo="{meta.repo}"
+	theme="gruvbox-dark"
+	label="comments"
+	issueTerm="pathname"
+/>
 <Footer/>
 <BackToTop/>
 <ToggleButton bind:checked={$enable_effects}/>
@@ -43,6 +56,7 @@
 	#party {
 		z-index: 300;
 	}
+
 </style>
 
 
