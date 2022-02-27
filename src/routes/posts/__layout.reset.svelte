@@ -39,7 +39,7 @@
 </main>
 
 <Utterances
-	repo="{meta.repo}"
+	reponame="{meta.repo}"
 	theme="gruvbox-dark"
 	label="comments"
 	issueTerm="pathname"
