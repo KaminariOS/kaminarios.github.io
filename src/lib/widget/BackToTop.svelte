@@ -30,7 +30,7 @@
     .back-to-top {
       position: fixed;
       right: 5%;
-      bottom: 5%;
+      bottom: 10%;
       border-radius: 100%;
       background: rgba(133, 245, 39, 0.1);
       padding: 0.5rem;

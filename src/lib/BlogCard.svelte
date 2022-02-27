@@ -15,7 +15,7 @@
 </script>
 <!--<a href='/posts/'>-->
 {#if init}
-	<a transition:fly={{delay: 250, duration: 600, x: getRandomOffsets() * 600, y: getRandomOffsets() * 400}}
+	<a transition:fly={{delay: 200, duration: 400, x: getRandomOffsets() * 600, y: getRandomOffsets() * 400}}
 		 href='/posts/{post.slug}' class="blog-card spring-fever"
 		 style="background-image: url({post.cover})">
 		<div class="title-content">
@@ -32,7 +32,7 @@
 			<ul class="utility-list">
 				<!--			<li class="comments">12</li>-->
 				<li class="date">🗓️{post.mtime}</li>
-				<li class='tag'>⏳ {post.readingTime}</li>
+				<li class='tag'>{post.readingTime}</li>
 			</ul>
 		</div><!-- /.utility-info -->
 		<!-- overlays -->

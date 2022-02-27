@@ -1,5 +1,5 @@
 import readingTime from 'reading-time';
-import db from '$lib/posts/db.json';
+import db from '../routes/posts/db.json';
 import dayjs from 'dayjs';
 import path from 'path';
 
@@ -42,7 +42,7 @@ function getRelatedPosts(post){
 	related.delete(post);
 	return Array.from(related);
 }
-const posts_with_related = posts.map(post => ({...post, relatedPosts: getRelatedPosts(post), readingTime: readingTime(post.html).text}))
+const posts_with_related = posts.map(post => ({...post, relatedPosts: getRelatedPosts(post), readingTime: '⏳' + readingTime(post.html).text}))
 	.map(post => ({...post, count: post.relatedPosts.length}))
 	.map(post => {
 		post.relatedPosts = post.relatedPosts
