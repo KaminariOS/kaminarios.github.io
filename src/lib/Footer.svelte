@@ -8,7 +8,7 @@
 			Powered by
 			<a href="https://kit.svelte.dev/" target="_blank" rel="noopener">
 				<IconSvelte/>
-			SvelteKit
+			SvelteKit.
 		</a>.
 		</div>
 		<div class='socials'>

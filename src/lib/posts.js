@@ -17,7 +17,7 @@ for (const relativePath in imports) {
 			slug,
 			...post.metadata,
 			...post.default.render(),
-	    default: post.default,
+	    // default: post.default,
 			mtime: dayjs(db_post.mtime),
 			birthtime: dayjs(db_post.birthtime),
 			count: 0,
@@ -58,6 +58,9 @@ const posts_with_related = posts.map(post => ({...post, relatedPosts: getRelated
 		return post;
 	});
 
+function extractInfo(post){
+	return {...post, html: null, relatedPosts: null}
+}
 const slugMap = new Map();
 for (const post of posts_with_related){
 	slugMap.set(post.slug, post)
@@ -66,12 +69,12 @@ for (const post of posts_with_related){
 	const rels = [];
 	post.relatedPosts.forEach(e => {
 		const rel = slugMap.get(e.slug);
-		const clone = {...rel, relatedPosts: []};
+		const clone = extractInfo(rel);
 		rels.push(clone);
 	});
 	post.relatedPosts = rels;
 }
 
-
+export const postInfo = posts.map(e => extractInfo(e));
 export default posts_with_related;
 
