@@ -78,6 +78,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+		flex-wrap: wrap;
+		flex-basis: 50%;
   }
   .note {
     font-size: .6em;
