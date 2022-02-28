@@ -8,6 +8,7 @@
 	import ThemeToggler from '$lib/widget/ThemeToggler.svelte';
 	import {enable_effects, menuMode} from '$lib/stores.js';
 	import PostContent from '$lib/PostContent.svelte';
+	import {onDestroy} from 'svelte';
 
 	export async function load({ url, fetch }) {
 	        const post = await fetch(`${url.pathname}.json`).then(res => res.json());
@@ -22,6 +23,12 @@
 	import meta from '$lib/meta.js';
 	import { Utterances } from '@codewithshin/svelte-utterances';
 	export let post;
+	let commentNode;
+	onDestroy(() => {
+		while (commentNode && commentNode.firstChild) {
+			commentNode.removeChild(commentNode.firstChild);
+		}
+	})
 </script>
 
 <svelte:head>
@@ -37,13 +44,15 @@
 	<slot/>
 </PostContent>
 </main>
+<div bind:this={commentNode}>
+	<Utterances
+							reponame="{meta.repo}"
+							theme="gruvbox-dark"
+							label="comments"
+							issueTerm="pathname"
+	/>
+</div>
 
-<Utterances
-	reponame="{meta.repo}"
-	theme="gruvbox-dark"
-	label="comments"
-	issueTerm="pathname"
-/>
 <Footer/>
 <BackToTop/>
 <ToggleButton bind:checked={$enable_effects}/>
