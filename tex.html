@@ -22,19 +22,18 @@
 		<meta name="msapplication-TileColor" content="#503495">
 		<meta name="theme-color" content="#ffffff">
 
-		<meta http-equiv="content-security-policy" content=""><title>進撃のRustacean</title>
+		<meta http-equiv="content-security-policy" content=""><title>Render</title><script src="https://cdnjs.cloudflare.com/ajax/libs/asciidoctor.js/1.5.6/asciidoctor.min.js" data-svelte="svelte-kb9sh7"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous" data-svelte="svelte-kb9sh7">
 	<link rel="stylesheet" href="/_app/assets/vendor-ef973358.css">
 	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-d04426f3.css">
 	<link rel="stylesheet" href="/_app/assets/ThemeToggler-eab44246.css">
-	<link rel="stylesheet" href="/_app/assets/pages/posts.svelte-1e012777.css">
-	<link rel="stylesheet" href="/_app/assets/BlogCard-6eb3596a.css">
+	<link rel="stylesheet" href="/_app/assets/KatexEditor-78347730.css">
 	<link rel="modulepreload" href="/_app/start-3e5f8e76.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-fabc283b.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-775e44cc.js">
 	<link rel="modulepreload" href="/_app/chunks/ThemeToggler-3935210b.js">
 	<link rel="modulepreload" href="/_app/chunks/stores-f034fa66.js">
-	<link rel="modulepreload" href="/_app/pages/posts.svelte-7705140b.js">
-	<link rel="modulepreload" href="/_app/chunks/BlogCard-961608dd.js">
+	<link rel="modulepreload" href="/_app/pages/tex.svelte-b01bbf8a.js">
+	<link rel="modulepreload" href="/_app/chunks/KatexEditor-d25d9b65.js">
 	</head>
 	<body>
 		<div>
@@ -52,22 +51,245 @@
 
 
 
+<div class="container svelte-12sxolj"><textarea placeholder="Enter your latex expression" class="svelte-12sxolj">= Online AsciiDoc renderer intergrated with Katex
+kaminarios <charnkouha@gmail.com>
+3.0, July 29, 2022: AsciiDoc article template
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+:nofooter:
+
+== Usage
+First, you can write Latex  or part of Markdown in this renderer without any knowledge in AsciiDoc.
+For example, \$\theta(n)\$, \[\theta(n)\], \(\theta(n)\).
+
+- Markdown unordered list
+    - fsdg
+- mark
+
+## Markdown header
+
+Markdown break
+---
+
+For more information about Markdown compatibility. refer to https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#markdown-compatibility[here].
 
 
+The syntax of this render is almost 100% compatible with AsciiDoc syntax. In terms of Science, Technology, Engineering and Math (STEM) expressions, only `[latexmath]` is supported (`:stem:` header not needed).
+
+For example: inline latexmath:[\theta(n)] and block
+[latexmath]
+++++
+	i \hbar \frac{\partial}{\partial t}\Psi(\mathbf{r},t) = \hat H \Psi(\mathbf{r},t)
+++++
 
 
+Content entered directly below the header but before the first section heading is called the preamble.
 
 
+== First level heading
+
+This is a paragraph with a *bold* word and an _italicized_ word.
+
+.Image caption
+image::warrior-girl-katana-fantasy-art-uhdpaper.com-4K-8.1473.jpg[I am the image alt text.]
+
+This is another paragraph.footnote:[I am footnote text and will be displayed at the bottom of the article.]
+
+=== Second level heading
+
+.Unordered list title
+* list item 1
+** nested list item
+*** nested nested list item 1
+*** nested nested list item 2
+* list item 2
+
+This is a paragraph.
+
+.Example block title
+====
+Content in an example block is subject to normal substitutions.
+====
+
+.Sidebar title
+****
+Sidebars contain aside text and are subject to normal substitutions.
+****
+
+==== Third level heading
+
+[#id-for-listing-block]
+.Listing block title
+----
+Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.
+----
+
+===== Fourth level heading
+
+.Table title
+|===
+|Column heading 1 |Column heading 2
+
+|Column 1, row 1
+|Column 2, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|===
+
+====== Fifth level heading
+
+[quote,firstname lastname,movie title]
+____
+I am a block quote or a prose excerpt.
+I am subject to normal substitutions.
+____
+
+[verse,firstname lastname,poem title and more]
+____
+I am a verse block.
+  Indents and endlines are preserved in verse blocks.
+____
+
+== First level heading
+
+TIP: There are five admonition labels: Tip, Note, Important, Caution and Warning.
+
+// I am a comment and won't be rendered.
+
+. ordered list item
+.. nested ordered list item
+. ordered list item
+
+The text at the end of this sentence is cross referenced to <<_third_level_heading,the third level heading>>
+
+== First level heading
+
+This is a link to the https://docs.asciidoctor.org/home/[Asciidoctor documentation].
+This is an attribute reference {url-quickref}[that links this text to the AsciiDoc Syntax Quick Reference].
+</textarea>
+	<div class="latex_rendered_box svelte-12sxolj">
+		<!-- HTML_TAG_START -->= Online AsciiDoc renderer intergrated with Katex
+kaminarios <charnkouha@gmail.com>
+3.0, July 29, 2022: AsciiDoc article template
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+:nofooter:
+
+== Usage
+First, you can write Latex  or part of Markdown in this renderer without any knowledge in AsciiDoc.
+For example, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\theta(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\theta(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\theta(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>.
+
+- Markdown unordered list
+    - fsdg
+- mark
+
+## Markdown header
+
+Markdown break
+---
+
+For more information about Markdown compatibility. refer to https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#markdown-compatibility[here].
 
 
-<div class="grid-container svelte-1rhf0ke">
+The syntax of this render is almost 100% compatible with AsciiDoc syntax. In terms of Science, Technology, Engineering and Math (STEM) expressions, only `[latexmath]` is supported (`:stem:` header not needed).
+
+For example: inline +++<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\theta(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>+++ and block
+++++
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mi mathvariant="normal">ℏ</mi><mfrac><mi mathvariant="normal">∂</mi><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac><mi mathvariant="normal">Ψ</mi><mo stretchy="false">(</mo><mi mathvariant="bold">r</mi><mo separator="true">,</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mover accent="true"><mi>H</mi><mo>^</mo></mover><mi mathvariant="normal">Ψ</mi><mo stretchy="false">(</mo><mi mathvariant="bold">r</mi><mo separator="true">,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">i \hbar \frac{\partial}{\partial t}\Psi(\mathbf{r},t) = \hat H \Psi(\mathbf{r},t)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2251em;vertical-align:-0.345em;"></span><span class="mord mathnormal">i</span><span class="mord">ℏ</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8801em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight" style="margin-right:0.05556em;">∂</span><span class="mord mathnormal mtight">t</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight" style="margin-right:0.05556em;">∂</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">Ψ</span><span class="mopen">(</span><span class="mord mathbf">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1968em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1944em;"><span class="mord">^</span></span></span></span></span></span></span><span class="mord">Ψ</span><span class="mopen">(</span><span class="mord mathbf">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span>
+++++
 
 
+Content entered directly below the header but before the first section heading is called the preamble.
 
 
+== First level heading
 
+This is a paragraph with a *bold* word and an _italicized_ word.
 
+.Image caption
+image::warrior-girl-katana-fantasy-art-uhdpaper.com-4K-8.1473.jpg[I am the image alt text.]
 
+This is another paragraph.footnote:[I am footnote text and will be displayed at the bottom of the article.]
+
+=== Second level heading
+
+.Unordered list title
+* list item 1
+** nested list item
+*** nested nested list item 1
+*** nested nested list item 2
+* list item 2
+
+This is a paragraph.
+
+.Example block title
+====
+Content in an example block is subject to normal substitutions.
+====
+
+.Sidebar title
+****
+Sidebars contain aside text and are subject to normal substitutions.
+****
+
+==== Third level heading
+
+[#id-for-listing-block]
+.Listing block title
+----
+Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.
+----
+
+===== Fourth level heading
+
+.Table title
+|===
+|Column heading 1 |Column heading 2
+
+|Column 1, row 1
+|Column 2, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|===
+
+====== Fifth level heading
+
+[quote,firstname lastname,movie title]
+____
+I am a block quote or a prose excerpt.
+I am subject to normal substitutions.
+____
+
+[verse,firstname lastname,poem title and more]
+____
+I am a verse block.
+  Indents and endlines are preserved in verse blocks.
+____
+
+== First level heading
+
+TIP: There are five admonition labels: Tip, Note, Important, Caution and Warning.
+
+// I am a comment and won't be rendered.
+
+. ordered list item
+.. nested ordered list item
+. ordered list item
+
+The text at the end of this sentence is cross referenced to <<_third_level_heading,the third level heading>>
+
+== First level heading
+
+This is a link to the https://docs.asciidoctor.org/home/[Asciidoctor documentation].
+This is an attribute reference {url-quickref}[that links this text to the AsciiDoc Syntax Quick Reference].
+<!-- HTML_TAG_END --></div>
 </div></main></div>
 <div class="power-switch svelte-1wf7xse"><input type="checkbox" class="svelte-1wf7xse" checked>
 	<div class="button svelte-1wf7xse"><svg class="power-off svelte-1wf7xse"><use xlink:href="#line" class="line svelte-1wf7xse"></use><use xlink:href="#circle" class="circle svelte-1wf7xse"></use></svg>
@@ -124,10 +346,10 @@
 </nav>
 
 
-		<script type="module" data-hydrate="10sbvyb">
+		<script type="module" data-hydrate="1rtdp5p">
 		import { start } from "/_app/start-3e5f8e76.js";
 		start({
-			target: document.querySelector('[data-hydrate="10sbvyb"]').parentNode,
+			target: document.querySelector('[data-hydrate="1rtdp5p"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -138,12 +360,12 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-775e44cc.js"),
-						import("/_app/pages/posts.svelte-7705140b.js")
+						import("/_app/pages/tex.svelte-b01bbf8a.js")
 				],
-				url: new URL("http://sveltekit-prerender/posts"),
+				url: new URL("http://sveltekit-prerender/tex"),
 				params: {}
 			}
 		});
-	</script><script type="application/json" data-type="svelte-data" data-url="/blog.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"[{\"slug\":\"first-blog\",\"title\":\"My first personal blog\",\"tags\":[\"open source\",\"frontend\",\"css\",\"JavaScript\"],\"excerpt\":\"Just wanna fucjk\",\"cover\":\"warrior-girl-katana-fantasy-art-uhdpaper.com-4K-8.1473.jpg\",\"html\":null,\"css\":{\"code\":\"\",\"map\":null},\"head\":\"\",\"mtime\":\"2022-02-28\",\"birthtime\":\"2022-02-23\",\"count\":6,\"relatedPosts\":null,\"readingTime\":\"⏳1 min read\"},{\"slug\":\"future\",\"title\":\"Pre\",\"tags\":[\"open source\",\"politics\",\"ccp\"],\"hidden\":false,\"excerpt\":\"Just wanna fucjk\",\"cover\":\"https:\u002F\u002Fimages.pexels.com\u002Fphotos\u002F3828245\u002Fpexels-photo-3828245.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\"html\":null,\"css\":{\"code\":\"\",\"map\":null},\"head\":\"\",\"mtime\":\"2022-02-26\",\"birthtime\":\"2022-02-25\",\"count\":6,\"relatedPosts\":null,\"readingTime\":\"⏳1 min read\"},{\"slug\":\"tesdt\",\"title\":\"Lorem test\",\"tags\":[\"open source\"],\"excerpt\":\"Just wanna fucjk\",\"cover\":\"https:\u002F\u002Fi.ibb.co\u002F6gFk6f3\u002Fgirl-warrior-sword-fantasy-art-uhdpaper-com-4-K-8-3196.jpgW\",\"html\":null,\"css\":{\"code\":\"\",\"map\":null},\"head\":\"\",\"mtime\":\"2022-02-27\",\"birthtime\":\"2022-02-18\",\"count\":6,\"relatedPosts\":null,\"readingTime\":\"⏳4 min read\"},{\"slug\":\"test\",\"title\":\"Lorem test\",\"tags\":[\"open source\"],\"date\":[\"2019-12-28T00:00:00.000Z\"],\"hidden\":false,\"excerpt\":\"Just wanna fucjk\",\"cover\":\"https:\u002F\u002Fimages.pexels.com\u002Fphotos\u002F1906830\u002Fpexels-photo-1906830.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\"html\":null,\"css\":{\"code\":\"\",\"map\":null},\"head\":\"\",\"mtime\":\"2022-02-27\",\"birthtime\":\"2022-02-17\",\"count\":6,\"relatedPosts\":null,\"readingTime\":\"⏳3 min read\"},{\"slug\":\"test2\",\"title\":\"Lorem test\",\"tags\":[\"open source\"],\"hidden\":false,\"excerpt\":\"Just wanna fucjk\",\"cover\":\"https:\u002F\u002Fimages.pexels.com\u002Fphotos\u002F3828245\u002Fpexels-photo-3828245.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\"html\":null,\"css\":{\"code\":\"\",\"map\":null},\"head\":\"\",\"mtime\":\"2022-02-27\",\"birthtime\":\"2022-02-22\",\"count\":6,\"relatedPosts\":null,\"readingTime\":\"⏳3 min read\"},{\"slug\":\"test3\",\"title\":\"Lorem sdgf\",\"tags\":[\"open source\"],\"hidden\":false,\"excerpt\":\"Just wanna fucjk\",\"cover\":\"https:\u002F\u002Fimages.pexels.com\u002Fphotos\u002F415829\u002Fpexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\"html\":null,\"css\":{\"code\":\"\",\"map\":null},\"head\":\"\",\"mtime\":\"2022-02-27\",\"birthtime\":\"2022-02-17\",\"count\":6,\"relatedPosts\":null,\"readingTime\":\"⏳1 min read\"},{\"slug\":\"whynot\",\"title\":\"hero\",\"tags\":[\"open source\"],\"hidden\":false,\"excerpt\":\"Just wanna fucjk\",\"cover\":\"https:\u002F\u002Fimages.pexels.com\u002Fphotos\u002F415829\u002Fpexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\"html\":null,\"css\":{\"code\":\"\",\"map\":null},\"head\":\"\",\"mtime\":\"2022-02-27\",\"birthtime\":\"2022-02-27\",\"count\":6,\"relatedPosts\":null,\"readingTime\":\"⏳1 min read\"}]"}</script></div>
+	</script></div>
 	</body>
 </html>

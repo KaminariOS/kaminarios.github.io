@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-3ecdacd6.js",
+    "file": "start-3e5f8e76.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -20,21 +20,22 @@
       "src/routes/posts/test2.md",
       "src/routes/posts/test3.md",
       "src/routes/posts/test.md",
-      "src/routes/posts.svelte"
+      "src/routes/posts.svelte",
+      "src/routes/tex.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-3707fc9e.js",
+    "file": "pages/__layout.svelte-775e44cc.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-fabc283b.js",
-      "_ThemeToggler-91cc7dc6.js",
+      "_ThemeToggler-3935210b.js",
       "_stores-f034fa66.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-fc1bdec0.css"
+      "assets/pages/__layout.svelte-d04426f3.css"
     ],
     "assets": [
       "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
@@ -97,30 +98,31 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-32f88965.js",
+    "file": "pages/about.svelte-d49f0b03.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-fabc283b.js"
+      "_vendor-fabc283b.js",
+      "_KatexEditor-d25d9b65.js"
     ],
     "css": [
-      "assets/pages/about.svelte-52bcd315.css"
+      "assets/pages/about.svelte-b3bb5a66.css"
     ]
   },
   "src/routes/posts/__layout.reset.svelte": {
-    "file": "pages/posts/__layout.reset.svelte-d6e56f75.js",
+    "file": "pages/posts/__layout.reset.svelte-2d1024d8.js",
     "src": "src/routes/posts/__layout.reset.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-fabc283b.js",
-      "_Tag-151e23c8.js",
+      "_BlogCard-961608dd.js",
       "_stores-f034fa66.js",
-      "_ThemeToggler-91cc7dc6.js"
+      "_ThemeToggler-3935210b.js"
     ],
     "css": [
-      "assets/pages/posts/__layout.reset.svelte-d2a47b6c.css"
+      "assets/pages/posts/__layout.reset.svelte-40b64ba4.css"
     ],
     "assets": [
       "assets/open-sans-cyrillic-ext-400-normal-e1e96c44.woff2",
@@ -134,7 +136,7 @@
     ]
   },
   "src/routes/posts/first-blog.md": {
-    "file": "pages/posts/first-blog.md-8dda12b8.js",
+    "file": "pages/posts/first-blog.md-9a17a771.js",
     "src": "src/routes/posts/first-blog.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -201,16 +203,26 @@
     ]
   },
   "src/routes/posts.svelte": {
-    "file": "pages/posts.svelte-709bbdfc.js",
+    "file": "pages/posts.svelte-7705140b.js",
     "src": "src/routes/posts.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-fabc283b.js",
-      "_Tag-151e23c8.js"
+      "_BlogCard-961608dd.js"
     ],
     "css": [
-      "assets/pages/posts.svelte-eb5a861c.css"
+      "assets/pages/posts.svelte-1e012777.css"
+    ]
+  },
+  "src/routes/tex.svelte": {
+    "file": "pages/tex.svelte-b01bbf8a.js",
+    "src": "src/routes/tex.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-fabc283b.js",
+      "_KatexEditor-d25d9b65.js"
     ]
   },
   "_vendor-fabc283b.js": {
@@ -226,8 +238,8 @@
       "assets/vendor-ef973358.css"
     ]
   },
-  "_ThemeToggler-91cc7dc6.js": {
-    "file": "chunks/ThemeToggler-91cc7dc6.js",
+  "_ThemeToggler-3935210b.js": {
+    "file": "chunks/ThemeToggler-3935210b.js",
     "imports": [
       "_vendor-fabc283b.js",
       "_stores-f034fa66.js"
@@ -242,13 +254,22 @@
       "_vendor-fabc283b.js"
     ]
   },
-  "_Tag-151e23c8.js": {
-    "file": "chunks/Tag-151e23c8.js",
+  "_KatexEditor-d25d9b65.js": {
+    "file": "chunks/KatexEditor-d25d9b65.js",
     "imports": [
       "_vendor-fabc283b.js"
     ],
     "css": [
-      "assets/Tag-ea1a68dc.css"
+      "assets/KatexEditor-78347730.css"
+    ]
+  },
+  "_BlogCard-961608dd.js": {
+    "file": "chunks/BlogCard-961608dd.js",
+    "imports": [
+      "_vendor-fabc283b.js"
+    ],
+    "css": [
+      "assets/BlogCard-6eb3596a.css"
     ]
   },
   "node_modules/tsparticles/esm/Plugins/PolygonMask/pathseg.js": {
