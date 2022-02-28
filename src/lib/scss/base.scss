@@ -27,11 +27,17 @@ h1 {
 h2 {
 	font-size: 1.8rem;
 	font-weight: 600;
+	@include for-phone-only {
+		font-size: 1.5rem;
+	}
 }
 
 h3 {
 	font-size: 1.5rem;
 	font-weight: 600;
+	@include for-phone-only {
+		font-size: 1.3rem;
+	}
 }
 
 h4 {

@@ -19,7 +19,7 @@
 		 href='/posts/{post.slug}' class="blog-card spring-fever"
 		 style="background-image: url({post.cover})">
 		<div class="title-content">
-			<h3>{post.title}</h3>
+			<h2>{post.title}</h2>
 			<hr />
 			<div class="intro">{post.excerpt}</div>
 		</div><!-- /.title-content -->
@@ -123,12 +123,10 @@
     mix-blend-mode: difference;
 
   }
-  h3{
-    font-size: 20px;
+  h2{
     font-weight: 500;
     letter-spacing: 2px;
     color: $h-color;
-    font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
   }
   hr{
@@ -142,8 +140,6 @@
     margin: 0 auto;
     color: $txt-color;
     font-family: 'Droid Serif', serif;
-    font-size: 13px;
-    font-style: italic;
     line-height: 18px;
     mix-blend-mode: difference;
   }
