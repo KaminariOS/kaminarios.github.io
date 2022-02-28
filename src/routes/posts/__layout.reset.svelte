@@ -9,6 +9,7 @@
 	import {enable_effects, menuMode} from '$lib/stores.js';
 	import PostContent from '$lib/PostContent.svelte';
 	import {onDestroy} from 'svelte';
+	import BlogCard from '$lib/BlogCard.svelte';
 
 	export async function load({ url, fetch }) {
 	        const post = await fetch(`${url.pathname}.json`).then(res => res.json());
@@ -44,6 +45,11 @@
 	<slot/>
 </PostContent>
 </main>
+<div class='related'>
+	{#each post.relatedPosts as rel}
+		<BlogCard post={rel}/>
+	{/each}
+</div>
 <div bind:this={commentNode}>
 	<Utterances
 							reponame="{meta.repo}"
@@ -64,7 +70,16 @@
 	#party {
 		z-index: 300;
 	}
-
+	.related {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 5px;
+    & > :global(*) {
+			flex-grow: 1;
+			flex-shrink: 1;
+		}
+	}
 </style>
 
 

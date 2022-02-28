@@ -58,6 +58,20 @@ const posts_with_related = posts.map(post => ({...post, relatedPosts: getRelated
 		return post;
 	});
 
+const slugMap = new Map();
+for (const post of posts_with_related){
+	slugMap.set(post.slug, post)
+}
+for (const post of posts_with_related){
+	const rels = [];
+	post.relatedPosts.forEach(e => {
+		const rel = slugMap.get(e.slug);
+		const clone = {...rel, relatedPosts: []};
+		rels.push(clone);
+	});
+	post.relatedPosts = rels;
+}
+
 
 export default posts_with_related;
 
