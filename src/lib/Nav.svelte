@@ -32,7 +32,7 @@
 				<Hero/>
 				<div class='jp'>俺</div>
 			</a>
-			<a class='option' href='/posts'>
+			<a class='option' href='/tex'>
 				<Tex/>
 				<div class='jp'>Tex & Asciidoc</div>
 			</a>
