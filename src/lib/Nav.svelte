@@ -24,7 +24,7 @@
 				<Torii/>
 				<div class='jp'>鳥居</div>
 			</a>
-			<a class='option' href='/blog'>
+			<a class='option' href='/posts'>
 				<Library/>
 				<div class='jp'>Post</div>
 			</a>
@@ -32,7 +32,7 @@
 				<Hero/>
 				<div class='jp'>俺</div>
 			</a>
-			<a class='option' href='/blog'>
+			<a class='option' href='/posts'>
 				<Tex/>
 				<div class='jp'>Tex & Asciidoc</div>
 			</a>
@@ -40,7 +40,7 @@
 				<Atom/>
 				<div class='jp'>かむやしろ</div>
 			</a>
-			<a class='option' href='/blog'>
+			<a class='option' href='/posts'>
 				<Torii/>
 				<div class='jp'>かむやしろ</div>
 			</a>
