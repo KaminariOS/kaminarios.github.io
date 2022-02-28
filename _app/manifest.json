@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-3e5f8e76.js",
+    "file": "start-597a49b8.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -98,13 +98,13 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-d49f0b03.js",
+    "file": "pages/about.svelte-50ff31c2.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-fabc283b.js",
-      "_KatexEditor-d25d9b65.js"
+      "_KatexEditor-0e1037c9.js"
     ],
     "css": [
       "assets/pages/about.svelte-b3bb5a66.css"
@@ -216,13 +216,13 @@
     ]
   },
   "src/routes/tex.svelte": {
-    "file": "pages/tex.svelte-b01bbf8a.js",
+    "file": "pages/tex.svelte-e6b8c42b.js",
     "src": "src/routes/tex.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-fabc283b.js",
-      "_KatexEditor-d25d9b65.js"
+      "_KatexEditor-0e1037c9.js"
     ]
   },
   "_vendor-fabc283b.js": {
@@ -254,8 +254,8 @@
       "_vendor-fabc283b.js"
     ]
   },
-  "_KatexEditor-d25d9b65.js": {
-    "file": "chunks/KatexEditor-d25d9b65.js",
+  "_KatexEditor-0e1037c9.js": {
+    "file": "chunks/KatexEditor-0e1037c9.js",
     "imports": [
       "_vendor-fabc283b.js"
     ],
