@@ -38,7 +38,7 @@
 		//flex-direction: column;
 		padding: 1rem;
 		////max-width: 1024px;
-		margin-bottom:  10%;
+		//margin-bottom:  0%;
 
 
 		box-sizing: border-box;
