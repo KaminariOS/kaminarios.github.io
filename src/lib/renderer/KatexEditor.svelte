@@ -2,16 +2,20 @@
 	import Katex from './Katex.svelte';
 	import {preprocess, process} from './KatexProcessor.js';
 	import readme from './README.adoc?raw';
+	import {browser} from '$app/env';
+	import {onMount} from 'svelte';
 
 	let input = String.raw`
 
 `;
 	input = readme;
 	let html;
-	let md = {convert: (e, c) => e};
+	let md = {convert: (e, c) => e, unload: true};
 
 	function load() {
-		md = new window.Asciidoctor;
+		if (window.Asciidoctor && !!md.unload){
+			md = new window.Asciidoctor;
+		}
 	}
 	$: {
 		html = preprocess(input);
@@ -27,11 +31,16 @@
 		let padding = computed_styles.padding;
 		height = (40 + input.split(/\r\n|\r|\n/).length * parseInt(lineHeight, 10) + 2 * parseInt(padding, 10)).toString() + lineHeight.slice(-2);
 	}
-
+	const callback = function(){
+		if (browser){
+			 setInterval(load, 1000);
+		}
+	}
+	onMount(callback);
 </script>
 
 <svelte:head>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/asciidoctor.js/1.5.6/asciidoctor.min.js" on:load={load()}></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/asciidoctor.js/1.5.6/asciidoctor.min.js" on:load={load}></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
 </svelte:head>
 
