@@ -75,6 +75,6 @@ for (const post of posts_with_related){
 	post.relatedPosts = rels;
 }
 
-export const postInfo = posts.map(e => extractInfo(e));
+export const postInfo = posts_with_related.map(e => extractInfo(e));
 export default posts_with_related;
 

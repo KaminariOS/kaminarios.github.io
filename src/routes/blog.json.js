@@ -1,4 +1,4 @@
-import { postInfo as posts} from '$lib/posts.js';
+import { postInfo as posts} from '$lib/posts';
 
 export async function get() {
 	const body = posts;
