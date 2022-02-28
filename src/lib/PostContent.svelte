@@ -70,6 +70,9 @@
 </div>
 <hr>
 <div class='post-content'>
+	<div class='cover'>
+		<img src={post.cover}  alt="cover"/>
+	</div>
 	<slot/>
 </div>
 <style lang='scss'>
@@ -95,4 +98,14 @@
     justify-content: space-between;
     align-items: center;
   }
+	.cover {
+		img {
+      max-width: 80%;
+			border-radius: 10px;
+		}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 1em;
+	}
 </style>
