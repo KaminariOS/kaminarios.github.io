@@ -71,10 +71,11 @@
 		z-index: 300;
 	}
 	.related {
+		margin: auto .3em;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 5px;
+		gap: .3em;
     & > :global(*) {
 			flex-grow: 1;
 			flex-shrink: 1;

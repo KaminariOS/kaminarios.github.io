@@ -1,3 +1,4 @@
+@import '../scss/mixins';
 .post-content {
 
   $headers: (h1, h2, h3, h4, h5, h6);
@@ -94,7 +95,7 @@
   p > img {
     width: 80%;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 10px;
     display: block;
   }
 
@@ -140,12 +141,8 @@
 }
 main .post-content {
   margin: auto 10%;
-  padding-top: 3vh;
-}
-main .post-meta {
-  h1 {
-    text-align: center;
+   @include for-phone-only {
+    margin: auto 5%;
   }
-  padding: 1em 1em 0 .5em;
-  margin-block-start: 0;
+  padding-top: 3vh;
 }

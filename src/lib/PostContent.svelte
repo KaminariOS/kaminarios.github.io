@@ -46,8 +46,11 @@
 		{post.title}
 	</title>
 </svelte:head>
-
+<div class='cover'>
+	<img src={post.cover}  alt="cover"/>
+</div>
 <div class='post-meta'>
+
 	<h1>{post.title}</h1>
 
 	<div class='meta'>
@@ -70,16 +73,14 @@
 </div>
 <hr>
 <div class='post-content'>
-	<div class='cover'>
-		<img src={post.cover}  alt="cover"/>
-	</div>
+
 	<slot/>
 </div>
 <style lang='scss'>
   .tags {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 		flex-wrap: wrap;
 		flex-basis: 50%;
@@ -92,7 +93,16 @@
     display: flex;
     flex-direction: column;
   }
+   .post-meta {
+    > h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    padding: 1em 1em 0 .5em;
+    margin-block-start: 0;
+  }
   .meta {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -100,12 +110,12 @@
   }
 	.cover {
 		img {
-      max-width: 80%;
-			border-radius: 10px;
+      max-width: 100%;
+			max-height: 50vh;
+			//border-radius: 10px;
 		}
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 1em;
 	}
 </style>
