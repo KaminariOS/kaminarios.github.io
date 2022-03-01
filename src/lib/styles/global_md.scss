@@ -14,7 +14,7 @@
   }
 
   nav.toc {
-    background-color: #eee;
+    background-color: var(--primary-lightest-color);
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +61,7 @@
     margin: 0 1em;
     padding: 0 1em;
     border-left: $block_border solid #78C0A8;
-    background: #EDEDED;
+    background: var(--primary-light-color);
     position: relative;
     line-height: 1.6;
     font-style: italic;
@@ -78,13 +78,13 @@
     }
 
     p {
-      color: #555;
+      //color: #555;
       line-height: 1.4;
     }
 
     footer {
       display: block;
-      color: #333333;
+      //color: #333333;
       font-weight: bold;
       margin-top: 1em;
     }
