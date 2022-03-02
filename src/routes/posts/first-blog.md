@@ -10,7 +10,7 @@ cover: "/warrior-girl-katana-fantasy-art-uhdpaper.com-4K-8.1473.jpg"
 </script>
 
 ## Disclaimer
-This project is heavily inspired by [Matheus Fantinel's blog](https://fantinel.dev). I learned a lot about [SvelteKit](https://kit.svelte.dev/) and CSS by going through his source code. What' more, I also copied two button components found on [codepen](https://codepen.io/), the link to which can be fouexnd in the source code.
+This project is heavily inspired by [Matheus Fantinel's blog](https://fantinel.dev). I learned a lot about [SvelteKit](https://kit.svelte.dev/) and CSS by going through his source code. What' more, I also copied two button components found on [codepen](https://codepen.io/), the link to which can be found in the source code.
 
 ## Motivation
 
@@ -31,7 +31,7 @@ I envisioned that an ideal markup language for blog posts should have the follow
 $$
   i \hbar \frac{\partial}{\partial t}\Psi(\mathbf{r},t) = \hat H \Psi(\mathbf{r},t)
 $$
-- **Progressively expressive**. It should come with a few simple and useful core syntax rules like Markdown, and much more advanced features like collapsible blocks and table-of -contents(toc) left to be explored. 
+- **Progressively expressive**. It should come with a few simple and useful core syntax rules like Markdown, and much more advanced features like collapsible blocks and table-of-contents(toc) left to be explored. 
 As you can see, the [toc](#disclaimer) at the beginning of this post is auto-generated.
 - **Highly customizable**. It would be great if I can enliven my posts with CSS and JavaScript. In fact, I can just insert a Svelte component right here: 
 <p style="display: flex; justify-content: center"><ToggleButton bind:checked={$enable_effects}/></p>

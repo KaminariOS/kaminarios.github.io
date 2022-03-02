@@ -21,7 +21,13 @@ export default {
 		rehypeExternalLinks,
 		rehypeSlug,
 		[rehypeAutolinkHeadings, { // Adds hyperlinks to the headings, requires rehypeSlug
-			behavior: 'wrap',
+			behavior: 'append',
+			content: {
+				type: 'element',
+				tagName: 'span',
+				properties: {className: ['heading-link']},
+				children: [{type: 'text', value: '🔗'}]
+			}
 		}],
 		toc,
 	],

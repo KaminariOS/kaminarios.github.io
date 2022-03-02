@@ -7,10 +7,13 @@
       text-align: left;
       > a {
         color: inherit;
+        .heading-link {
+          font-size: .5em;
+        }
       }
     }
     #{$header}:hover > a {
-      text-decoration: underline;
+      //text-decoration: underline;
     }
   }
 
@@ -23,6 +26,7 @@
     //margin: 4px;
     padding-right: 1em;
     border-radius: 10px;
+
   }
 
   $toc_list: "ol.toc-level";

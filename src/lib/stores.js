@@ -7,7 +7,7 @@ export const enable_effects = writable((ls.getItem(effect_key) || 'true') === 't
 
 enable_effects.subscribe(val => ls.setItem(effect_key, val.toString()));
 
-export const menuMode = writable(false);
+export const menuMode = writable(true);
 
 const theme_key = 'theme';
 const themeDefault = false;
