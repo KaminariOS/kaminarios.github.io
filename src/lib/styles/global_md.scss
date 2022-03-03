@@ -97,7 +97,8 @@
   }
 
   p > img {
-    width: 80%;
+    max-width: 80%;
+    max-height: 50vh;
     margin: auto;
     border-radius: 10px;
     display: block;
