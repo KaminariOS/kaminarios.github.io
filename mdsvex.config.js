@@ -20,15 +20,15 @@ export default {
 		rehypeKatexSvelte,
 		rehypeExternalLinks,
 		rehypeSlug,
+		toc,
 		[rehypeAutolinkHeadings, { // Adds hyperlinks to the headings, requires rehypeSlug
 			behavior: 'append',
 			content: {
 				type: 'element',
 				tagName: 'span',
 				properties: {className: ['heading-link']},
-				children: [{type: 'text', value: '🔗'}]
+				children: [{type: 'text', value: ' 🔗'}]
 			}
 		}],
-		toc,
 	],
 };
