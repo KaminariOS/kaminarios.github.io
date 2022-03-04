@@ -7,6 +7,7 @@ cover: "/warrior-girl-katana-fantasy-art-uhdpaper.com-4K-8.1473.jpg"
 <script>
     import ToggleButton from '$lib/widget/EffectToggler.svelte';
     import {enable_effects} from '$lib/stores';
+    import Image from '$lib/Image.svelte';
 </script>
 
 ## Disclaimer
@@ -42,6 +43,8 @@ As you can see, the [toc](#disclaimer) at the beginning of this post is auto-gen
   <ToggleButton bind:checked={$enable_effects}/>
 </p>
 
+#### Asciidoc
+
 At first I tried Asciidoc, which almost meets my expectations. It supports `latexmath` & and `asciimath`, and provides a myriad of advanced macros. Custom stylesheet can also be imported. It's definitely powerful enough for someone who wants to write a book or something. 
 
 Everything works fine locally until moving into the browser. Currently, the only implementation of Asciidoc---[Asciidoctor](https://asciidoctor.org/) is written in Ruby, and Asciidoctor.js is transpiled from the Rudy version.
@@ -61,9 +64,11 @@ I ended up choosing MDsvex to be one of the bedstones of my blog, by which this 
 
 ### Frontend tech stack
 
-#### Yew 
+#### Yew(Rust) 
+> The programming language that empowers everyone to become a systems programmer
+> <footer> Rust</footer>
 
-![Rust-dancing ferris](https://rustacean.net/more-crabby-things/dancing-ferris.gif)
+<Image src="https://rustacean.net/more-crabby-things/dancing-ferris.gif" alt="Unofficial Rust mascot: Dancing Ferris"/>
 
 For the record, [Rust](https://www.rust-lang.org/) is my favorite programming language and I proudly declare myself as a Rustacean. It' s Java that introduced me into the world of algorithms and object-oriented programming, but it's Rust that taught me more about low-level computer science. Rust is trying to accomplish safety, efficiency and ergonomics at the same time, which is really an eye-opener. I believe even if Rust somehow flops(unlikely) in the future, the spirit behind it will still persist. 
 
