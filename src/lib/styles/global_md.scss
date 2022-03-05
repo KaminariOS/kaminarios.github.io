@@ -1,5 +1,16 @@
 @import '../scss/mixins';
+@import '../scss/themes';
 .post-content {
+
+  p > code {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #BCBEC0;
+    padding: 2px;
+    font:1em "Fira Mono","Andale  Mono","DejaVu Sans Mono",monospace;
+    background-color: var(--button-primary-background-color);
+  }
 
   $headers: (h1, h2, h3, h4, h5, h6);
   @each $header in $headers {
