@@ -90,7 +90,7 @@ Technically, Svelte is not a framework but a compiler. However, constructing com
 
 For me, the hardest part of a blog project is not programming but styling. It took me almost a week to read articles about CSS and tweaking the layout to make my website fully responsive. The haunting horizontal scrollbar almost drove me crazy. I practiced using devtools heavily and learned the principle of mobile-first. 
 
-##
+## Conclusion
 
 So that's it, my first non-trivial project. It's far from perfection but my goal here has been achieved. I have to move on to learn more about computer science. I' m not satisfied with being an ordinary library user but aspire to be able to implement anything by myself if needed. I missed the old college days studying physics and mathematics, trying to break down the basic working principles of everything.
 
