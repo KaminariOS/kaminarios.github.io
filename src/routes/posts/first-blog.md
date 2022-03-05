@@ -78,7 +78,7 @@ However, the frontend ecosystem in Rust is far from maturity and everything is m
 
 I wish I had the time and energy to reinvent frontend wheels in Rust but time is always limited. I had to switch to a JavaScript framework so that my blog would get online in a month. Nevertheless, Rust and WebAssembly are worth exploring, and I may develop some WebGL project with them in the future.
 
-#### Svelte
+#### Svelte and SvelteKit 
 
 I have some experience with Vue, with which and [D3.js](https://d3js.org/) I used to build a data visualization tool. 
 
