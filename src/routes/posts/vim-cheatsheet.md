@@ -16,6 +16,10 @@ Neovim is my favorite editor in ZSH. However, in a desktop environment I mostly 
 
 `<C-B> / <C-F>`     Page up/down
 
+### Insert mode 
+
+<Ctrl + w> - delete word before the cursor during insert mode
+
 ### Jump to character
 
 `fc`    Go forward to character c
@@ -37,6 +41,7 @@ Neovim is my favorite editor in ZSH. However, in a desktop environment I mostly 
 ### Delete
 
 `db` 	Delete to beginning of word
+`cc`  change (replace) entire line
 
 ### Text objects
 
@@ -69,6 +74,13 @@ Neovim is my favorite editor in ZSH. However, in a desktop environment I mostly 
 `.` 	Repeat last command
 
 `]p` 	Paste under the current indentation level
+
+`daw`  delete (cut) word under the cursor and the space after or before it
+
+### Replace 
+
+`:%s/old/new/g`  replace all old with new throughout file
+`:%s/old/new/gc`  replace all old with new throughout file with confirmations
 
 ## Jetbrains
 
