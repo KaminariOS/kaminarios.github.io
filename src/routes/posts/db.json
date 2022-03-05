@@ -22,7 +22,7 @@
     },
     "first-blog": {
       "slug": "first-blog",
-      "mtime": "2022-03-05T01:25:14.226Z",
+      "mtime": "2022-03-05T01:27:03.239Z",
       "birthtime": "2022-02-23T04:23:39.163Z"
     },
     "future": {
@@ -34,6 +34,11 @@
       "slug": "whynot",
       "mtime": "2022-03-01T15:52:46.931Z",
       "birthtime": "2022-02-27T12:43:34.858Z"
+    },
+    "vim-cheatsheet": {
+      "slug": "vim-cheatsheet",
+      "mtime": "2022-03-05T06:55:49.006Z",
+      "birthtime": "2022-03-05T02:41:09.452Z"
     }
   }
 }
