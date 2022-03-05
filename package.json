@@ -2,11 +2,11 @@
   "name": "blog",
   "version": "0.0.1",
   "scripts": {
-    "dev": "node GenerateJsonData.js && svelte-kit dev --host -o",
+    "dev": "node GenerateJsonData.js && svelte-kit dev --host",
     "build": "node GenerateJsonData.js && rm -rf build && svelte-kit build && touch build/.nojekyll",
     "deploy": "npm run build && npx gh-pages -d build -t true",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview -o",
+    "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
