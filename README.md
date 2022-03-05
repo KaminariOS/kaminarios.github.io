@@ -1,3 +1,5 @@
+## Disclaimer
+This project is heavily inspired by [Matheus Fantinel's blog](https://fantinel.dev). I learned a lot about [SvelteKit](https://kit.svelte.dev/) and CSS by going through his source code. What' more, I also copied two button components found on [codepen](https://codepen.io/), the link to which can be found in the source code.
 
 ## Developing
 

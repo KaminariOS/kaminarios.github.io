@@ -70,11 +70,31 @@ I ended up choosing MDsvex to be one of the bedstones of my blog, by which this 
 
 <Image src="https://rustacean.net/more-crabby-things/dancing-ferris.gif" alt="Unofficial Rust mascot: Dancing Ferris"/>
 
-For the record, [Rust](https://www.rust-lang.org/) is my favorite programming language and I proudly declare myself as a Rustacean. It' s Java that introduced me into the world of algorithms and object-oriented programming, but it's Rust that taught me more about low-level computer science. Rust is trying to accomplish safety, efficiency and ergonomics at the same time, which is really an eye-opener. I believe even if Rust somehow flops(unlikely) in the future, the spirit behind it will still persist. 
+For the record, [Rust](https://www.rust-lang.org/) is my favorite programming language, and I proudly declare myself as a Rustacean. It' s Java that introduced me into the world of algorithms and object-oriented programming, but it's Rust that taught me more about low-level computer science. Rust is trying to accomplish safety, efficiency and ergonomics at the same time, which is really an eye-opener. I believe even if Rust somehow flops(unlikely) in the future, the spirit behind it will still persist. 
+
+Back to the topic, at the beginning I picked [Yew](https://yew.rs/), a React-like Rust frontend framework to build my website, because I'd like to write everything in Rust exclusively. 
+
+However, the frontend ecosystem in Rust is far from maturity and everything is more or less hacky. For example, WebAssembly, the compilation target of frontend Rust, can't access any browser API without intermediary JavaScript. In addition, important features like CSS scoping and debugging with sourcemap are not supported.
+
+I wish I had the time and energy to reinvent frontend wheels in Rust but time is always limited. I had to switch to a JavaScript framework so that my blog would get online in a month. Nevertheless, Rust and WebAssembly are worth exploring, and I may develop some WebGL project with them in the future.
 
 #### Svelte
 
+I have some experience with Vue, with which and [D3.js](https://d3js.org/) I used to build a data visualization tool. 
+
+Vue is great, but I always tend to try something new. Many in the community are talking about a rising star, so I decided to give it a shot.
+
+Technically, Svelte is not a framework but a compiler. However, constructing components with Svelte feels natural and smooth, and there is less boilerplate code. The community, documentation and REPL are fantastic. I think every frontend developer should try it out. 
+
 ### CSS 
+
+For me, the hardest part of a blog project is not programming but styling. It took me almost a week to read articles about CSS and tweaking the layout to make my website fully responsive. The haunting horizontal scrollbar almost drove me crazy. I practiced using devtools heavily and learned the principle of mobile-first. 
+
+##
+
+So that's it, my first non-trivial project. It's far from perfection but my goal here has been achieved. I have to move on to learn more about computer science. I' m not satisfied with being an ordinary library user but aspire to be able to implement anything by myself if needed. I missed the old college days studying physics and mathematics, trying to break down the basic working principles of everything.
+
+Thanks for reading!
 
 
 
