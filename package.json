@@ -53,7 +53,6 @@
     "@fontsource/fira-mono": "^4.5.0",
     "@fontsource/open-sans": "^4.5.5",
     "@fontsource/roboto": "^4.5.3",
-    "@fortawesome/free-brands-svg-icons": "^6.0.0",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
     "dayjs": "^1.10.7",
