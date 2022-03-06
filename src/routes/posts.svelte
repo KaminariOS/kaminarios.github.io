@@ -23,7 +23,7 @@
 	export let posts;
 </script>
 <svelte:head>
-	<title>進撃のRustacean</title>
+	<title>Posts</title>
 </svelte:head>
 <!--<section id="blog">-->
 <!--	<Section align="top" title="All posts">-->
