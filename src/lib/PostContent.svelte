@@ -36,6 +36,7 @@
 <script>
 	import Tag from '$lib/Tag.svelte';
 	import {onMount} from 'svelte';
+	import {fly, slide, fade} from 'svelte/transition';
 	import findPre from '$lib/copy';
 	export let post;
 
@@ -47,11 +48,11 @@
 	</title>
 </svelte:head>
 <div class='cover'>
-	<img src={post.cover}  alt="cover"/>
+	<img in:fade="{{delay: 250}}" src={post.cover}  alt="cover"/>
 </div>
 <div class='post-meta'>
 
-	<h1>{post.title}</h1>
+	<h1 in:fly="{{ y: 50, duration: 1000 }}">{post.title}</h1>
 
 	<div class='meta'>
 		<div class='notes'>
@@ -64,8 +65,10 @@
 			<div class="note">{post.readingTime}</div>
 		</div>
 		<div class="tags">
-			{#each post.tags as tag}
-				<Tag>{tag}</Tag>
+			{#each post.tags as tag, i (i)}
+				<div in:slide="{{delay: i * 200, duration: 900}}">
+					<Tag>{tag}</Tag>
+				</div>
 			{/each}
 		</div>
 	</div>
