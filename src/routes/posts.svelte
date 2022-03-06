@@ -37,8 +37,8 @@
 <!--	</Section>-->
 <!--</section>-->
 <div class="grid-container">
-	{#each posts as post, i}
-		<Card {post} {i}/>
+	{#each posts as post}
+		<Card {post} />
 	{/each}
 </div>
 <style lang='scss'>
