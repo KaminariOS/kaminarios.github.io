@@ -15,7 +15,7 @@
 </script>
 <!--<a href='/posts/'>-->
 {#if init}
-	<a in:fly={{delay: 200, duration: 400, x: getRandomOffsets() * 600, y: getRandomOffsets() * 400}}
+	<a in:fly={{delay: 200, duration: 600, x: getRandomOffsets() * 600, y: getRandomOffsets() * 400}}
 		 href='/posts/{post.slug}' class="blog-card spring-fever"
 		 style="background-image: url({post.cover})">
 		<div class="title-content">
