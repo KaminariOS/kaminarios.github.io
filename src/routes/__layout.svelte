@@ -39,8 +39,6 @@
 		padding: 1rem;
 		////max-width: 1024px;
 		//margin-bottom:  0%;
-
-
 		box-sizing: border-box;
 	}
 	.container {
@@ -55,7 +53,7 @@
   .container.menu :global(*) {
     //transform-origin: 100% 0;
     //transform-style: preserve-3d;
-    transform:  rotateX(30deg);
+    transform:  translateY(-25vh) rotateX(30deg);
 
   }
 
