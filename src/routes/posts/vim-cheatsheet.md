@@ -18,7 +18,7 @@ Neovim is my favorite editor in ZSH. However, in a desktop environment I mostly 
 
 ### Insert mode 
 
-<Ctrl + w> - delete word before the cursor during insert mode
+`<Ctrl + w>` delete word before the cursor during insert mode
 
 ### Jump to character
 
